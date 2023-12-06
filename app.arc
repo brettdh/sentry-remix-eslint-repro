@@ -1,5 +1,5 @@
 @app
-grunge-stack-template
+sentry-remix-eslint-repro-2827
 
 @aws
 runtime nodejs18.x
