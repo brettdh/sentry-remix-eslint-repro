@@ -4,7 +4,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix build",
+    "build": "remix build --sourcemap && sentry-upload-sourcemaps --org your-org --project your-project",
     "dev": "remix dev --manual -c \"arc sandbox -e testing\"",
     "format": "prettier --write .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
@@ -29,6 +29,7 @@
     "@remix-run/css-bundle": "^2.3.1",
     "@remix-run/node": "^2.3.1",
     "@remix-run/react": "^2.3.1",
+    "@sentry/remix": "^7.85.0",
     "bcryptjs": "2.4.3",
     "isbot": "^3.7.0",
     "react": "^18.2.0",
